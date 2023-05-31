@@ -1,0 +1,26 @@
+#background{ /* definindo propriedades da div background*/
+    position: fixed; /*posição fica fixa*/
+    inset: 0; /* definindo os eixos top, bottom, left, right como 0 (ZERO)*/
+    z-index: -1; /* div background é enviada uma camada para trás*/
+
+    width:100%; /* ocupa o máximo na largura*/
+    height: 100vh; /* ocupa o máximo na altura*/
+}
+
+#background video{ /* definindo propriedades do video*/
+    width: 100%; /* video ocupa o máximo na largura*/
+    height: 100%;/* video ocupa o máximo na altura*/
+    object-fit: cover; /*corte perfeito do video na janela*/
+}
+
+#background::after { /* adiciona um elemento no background*/
+    content: ''; /**/
+
+    width: inherit; /* herda os valores do pai*/
+    height: inherit; /* herda os valores do pai*/
+    position: fixed; /* define a posição como fixa*/
+    inset: 0; /* definindo os eixos top, bottom, left, right como 0 (ZERO)*/
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    /* definindo o background como vinheta*/
+    
+}
