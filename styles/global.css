@@ -1,5 +1,6 @@
 @import url('./background.css');
 @import url('./header.css');
+@import url('./main.css');
 
 
 * { /* resets de display*/
@@ -35,4 +36,5 @@ button:hover { /*todas as tags button vão receber o cursor pointer*/
 
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
